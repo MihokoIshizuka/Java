@@ -206,19 +206,19 @@ public class practice06 {
 //	}
 	
 //	乱数で、－10から35までの乱数を発生させ、”摂氏○○度”（○○が、発生した乱数）と表示させ、その値により、以下のように表示しなさい。
-	public static void main(String[] args) {
-		int num = (int)(Math.random()*46)-10;
-		System.out.println("摂氏" + num + "度");
-		
-//		30度以上の場合は、”真夏日です。”と表示。
-		if (num >= 30) {
-			System.out.println("真夏日です");
-		} else if (num >= 25 && num < 30) {
-			System.out.println("夏日です");
-		} else if (num < 0) {
-			System.out.println("真冬日です");
-		}
-	}
+//	public static void main(String[] args) {
+//		int num = (int)(Math.random()*46)-10;
+//		System.out.println("摂氏" + num + "度");
+//		
+////		30度以上の場合は、”真夏日です。”と表示。
+//		if (num >= 30) {
+//			System.out.println("真夏日です");
+//		} else if (num >= 25 && num < 30) {
+//			System.out.println("夏日です");
+//		} else if (num < 0) {
+//			System.out.println("真冬日です");
+//		}
+//	}
 	
 	
 	
