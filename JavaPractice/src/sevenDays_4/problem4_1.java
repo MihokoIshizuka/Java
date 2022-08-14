@@ -1,4 +1,4 @@
-package SevenDays_4;
+package sevenDays_4;
 
 public class problem4_1 {
 //	１から10までの乱数を発生させ、その数を表示した後、forループを用いて、その数だけ■マークを表示するプログラムを作りなさい。
