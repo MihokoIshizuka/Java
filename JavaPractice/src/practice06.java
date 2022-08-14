@@ -177,33 +177,48 @@ public class practice06 {
 //	public static void main(String[] args) {
 //		int num = (int)(Math.random()*100)+1;
 //		System.out.println(num);
-////		２の倍数であるなら、”2の倍数です。”と表示
-//		if(num % 2 == 0) {
+////	2の倍数でもあり、3の倍数でもある場合は、”2と3の公倍数です。”と表示
+//		if(num % 2 == 0 && num % 3 == 0) {
+//			System.out.println("2と3の公倍数です");
+////	2の倍数であるなら、”2の倍数です。”と表示
+//		} else if (num % 2 == 0) {
 //			System.out.println("2の倍数です");
-////		３の倍数であるなら、”3の倍数です。”と表示
+//		3の倍数であるなら、”3の倍数です。”と表示
 //		} else if (num % 3 == 0) {
 //			System.out.println("3の倍数です");
-//		} else if (num % 2 == 0 && num % 3 == 0) {
-//			System.out.println("2と3の公倍数です");
 //		}
 //	}
 	
 //	1から100までの数値を乱数で発生させ、以下の処理をしなさい。
+//	public static void main(String[] args) {
+//		int num = (int)(Math.random()*100)+1;
+//		System.out.println(num);
+////		50以下でかつ偶数の場合、”50以下の偶数です。”と表示。
+//		if (num <= 50 && num % 2 == 0) {
+//			System.out.println("50以下の偶数です");
+////		50以下の場合”50以下です。”と表示。
+//		} else if (num <= 50) {
+//			System.out.println("50以下です");
+////		偶数の場合、”偶数です。”と表示。
+//		} else if (num % 2 == 0) {
+//			System.out.println("偶数です");
+//		}
+//	}
+	
+//	乱数で、－10から35までの乱数を発生させ、”摂氏○○度”（○○が、発生した乱数）と表示させ、その値により、以下のように表示しなさい。
 	public static void main(String[] args) {
-		int num = (int)(Math.random()*100)+1;
-		System.out.println(num);
-//		50以下でかつ偶数の場合、”50以下の偶数です。”と表示。
-		if (num <= 50 && num % 2 == 0) {
-			System.out.println("50以下の偶数です");
-//		50以下の場合”50以下です。”と表示。
-		} else if (num <= 50) {
-			System.out.println("50以下です");
-//		偶数の場合、”偶数です。”と表示。
-		} else if (num % 2 == 0) {
-			System.out.println("偶数です");
+		int num = (int)(Math.random()*46)-10;
+		System.out.println("摂氏" + num + "度");
+		
+//		30度以上の場合は、”真夏日です。”と表示。
+		if (num >= 30) {
+			System.out.println("真夏日です");
+		} else if (num >= 25 && num < 30) {
+			System.out.println("夏日です");
+		} else if (num < 0) {
+			System.out.println("真冬日です");
 		}
 	}
-	
 	
 	
 	
