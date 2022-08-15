@@ -49,19 +49,38 @@ public static void main(String[] args) {
 //	}
 	
 //	曜日と、午前、午後、夜間の区別を入力し、病院が開いているか、休診であるかを表示するプログラムを作成しなさい
-	System.out.println("曜日を数字で選択してください（0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜）");
-	int h = new java.util.Scanner(System.in).nextInt();
-	System.out.println("時間帯を数字で選択してください（0=午前、1=午後、2=夜間）");
-	int i = new java.util.Scanner(System.in).nextInt();
+//	System.out.println("曜日を数字で選択してください（0=日曜、1=月曜、2=火曜、3=水曜、4=木曜、5=金曜、6=土曜）");
+//	int h = new java.util.Scanner(System.in).nextInt();
+//	System.out.println("時間帯を数字で選択してください（0=午前、1=午後、2=夜間）");
+//	int i = new java.util.Scanner(System.in).nextInt();
+//	
+//	if (h == 1) { 
+//		System.out.println("休診");
+//	} else if ((h == 2 && i == 0) || (h == 3 && i == 2) || (h == 5 && i == 0)) {
+//		System.out.println("休診");
+//	} else if (h == 6 && (i == 1 || i == 2)) {
+//		System.out.println("休診");
+//	} else {
+//		System.out.println("診療しています");
+//	}
 	
-	if (h == 1) { 
-		System.out.println("休診");
-	} else if ((h == 2 && i == 0) || (h == 3 && i == 2) || (h == 5 && i == 0)) {
-		System.out.println("休診");
-	} else if (h == 6 && (i == 1 || i == 2)) {
-		System.out.println("休診");
-	} else {
-		System.out.println("診療しています");
+//	整数値 x, y を入力し、以下の条件に該当する場合、そうであることを示す文を表示しなさい。
+	System.out.println("xの整数を入力してください");
+	int j = new java.util.Scanner(System.in).nextInt();
+	System.out.println("yの整数を入力してください");
+	int k = new java.util.Scanner(System.in).nextInt();
+	
+//	x は y より小さく、かつ、x と y は共に偶数である。
+	if (j < k && (j % 2 == 0 && k % 2 == 0)) {
+		System.out.println("x は y より小さく、かつ、x と y は共に偶数である。");
+	} else if (j == k && j < 0) {
+		System.out.println("x と y は等しく、かつ、負の数である。");
+	} else if (j < k || j % 2 == 0) {
+		System.out.println("x は y より小さい、または、x は偶数である。");
+	} else if ((j <= 10 || j > 100) && (k >= 10 && k <= 100)) {
+		System.out.println("x は 10 以下または 100 以上で、かつ、y は 10 以上かつ 100 以下である。");
+	} else if (j > 0 && k > 0) {
+		System.out.println("x も y も負の数である、ではない。");
 	}
 }
 }
