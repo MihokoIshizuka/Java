@@ -1,5 +1,7 @@
 package kita_soft;
 
+import java.util.Scanner;
+
 public class problem_4 {
 public static void main(String[] args) {
 	
@@ -32,11 +34,11 @@ public static void main(String[] args) {
 //	System.out.println(c);
 	
 //	整数を 10 回入力し、平均値を求めるプログラムを作成しなさい
+	Scanner scanner = new Scanner(System.in);
 	int sum = 0;
-	for (int d = 0; d < 10; d++) {
-		int e = new java.util.Scanner(System.in).nextInt();
-		sum =+ e;
-		System.out.println(sum / 10);
+	for (int d = 1; d <= 10; d++) {
+		sum += scanner.nextInt();
 	}
+	System.out.println(sum / 10);
 }
 }
