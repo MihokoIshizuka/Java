@@ -42,14 +42,41 @@ public static void main(String[] args) {
 //	System.out.println(sum / 10);
 	
 //	整数、0 か 1 を 10 回入力する。これを対戦成績と考え、0 を負け、1 を勝ちとして、勝ちの総数、負けの総数を表示するプログラムを作成しなさい。
-	Scanner scanner = new Scanner(System.in);
-	int win = 0;
-	for (int e = 0; e < 10; e ++) {
-		int end = scanner.nextInt();
-		if (end == 1) {
-			win += 1;
+//	Scanner scan = new Scanner(System.in);
+//	int win = 0;
+//	for (int e = 0; e < 10; e ++) {
+//		int end = scan.nextInt();
+//		if (end == 1) {
+//			win += 1;
+//		}
+//	}
+//	System.out.println("勝ち：" + win + "回、負け：" + (10 - win) + "回");
+	
+//	次のプログラムを作成しなさい。
+//	巨人、阪神戦で毎回の得点を入力する。（１回～９回）
+//	入力が終わったら、それぞれの得点とどちらが勝ったかを表示する。
+	Scanner sc = new Scanner(System.in);
+	int kyojinTotal = 0;
+	int hanshinTotal = 0;
+	int max = 0;
+	for (int f = 1; f <= 9; f++) {
+		System.out.println(f + "回表の巨人の点数");
+		int kyojin = sc.nextInt();
+		System.out.println(f + "回裏の阪神の点数");
+		int hanshin = sc.nextInt();
+		if(kyojin > 0) {
+			kyojinTotal += kyojin;
+		} 
+		if (hanshin > 0) {
+			hanshinTotal += hanshin;
 		}
 	}
-	System.out.println("勝ち：" + win + "回、負け：" + (10 - win) + "回");
+	System.out.println("巨人：" + kyojinTotal + "点、阪神：" + hanshinTotal + "点");
+	if (kyojinTotal > hanshinTotal) {
+		System.out.println("巨人の勝ち");
+	} else if (hanshinTotal > kyojinTotal) {
+		System.out.println("阪神の勝ち");
+	} 
+	
 }
 }
