@@ -34,11 +34,22 @@ public static void main(String[] args) {
 //	System.out.println(c);
 	
 //	整数を 10 回入力し、平均値を求めるプログラムを作成しなさい
+//	Scanner scanner = new Scanner(System.in);
+//	int sum = 0;
+//	for (int d = 1; d <= 10; d++) {
+//		sum += scanner.nextInt();
+//	}
+//	System.out.println(sum / 10);
+	
+//	整数、0 か 1 を 10 回入力する。これを対戦成績と考え、0 を負け、1 を勝ちとして、勝ちの総数、負けの総数を表示するプログラムを作成しなさい。
 	Scanner scanner = new Scanner(System.in);
-	int sum = 0;
-	for (int d = 1; d <= 10; d++) {
-		sum += scanner.nextInt();
+	int win = 0;
+	for (int e = 0; e < 10; e ++) {
+		int end = scanner.nextInt();
+		if (end == 1) {
+			win += 1;
+		}
 	}
-	System.out.println(sum / 10);
+	System.out.println("勝ち：" + win + "回、負け：" + (10 - win) + "回");
 }
 }
