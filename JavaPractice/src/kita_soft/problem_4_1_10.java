@@ -2,7 +2,7 @@ package kita_soft;
 
 import java.util.Scanner;
 
-public class problem_4 {
+public class problem_4_1_10 {
 public static void main(String[] args) {
 	
 //	“SPAM”という単語を 10 回表示するプログラムを作成しなさい。
@@ -55,28 +55,53 @@ public static void main(String[] args) {
 //	次のプログラムを作成しなさい。
 //	巨人、阪神戦で毎回の得点を入力する。（１回～９回）
 //	入力が終わったら、それぞれの得点とどちらが勝ったかを表示する。
-	Scanner sc = new Scanner(System.in);
-	int kyojinTotal = 0;
-	int hanshinTotal = 0;
-	int max = 0;
-	for (int f = 1; f <= 9; f++) {
-		System.out.println(f + "回表の巨人の点数");
-		int kyojin = sc.nextInt();
-		System.out.println(f + "回裏の阪神の点数");
-		int hanshin = sc.nextInt();
-		if(kyojin > 0) {
-			kyojinTotal += kyojin;
-		} 
-		if (hanshin > 0) {
-			hanshinTotal += hanshin;
-		}
+//	Scanner sc = new Scanner(System.in);
+//	int kyojinTotal = 0;
+//	int hanshinTotal = 0;
+//	for (int f = 1; f <= 9; f++) {
+//		System.out.println(f + "回表の巨人の点数");
+//		int kyojin = sc.nextInt();
+//		System.out.println(f + "回裏の阪神の点数");
+//		int hanshin = sc.nextInt();
+//		if(kyojin > 0) {
+//			kyojinTotal += kyojin;
+//		} 
+//		if (hanshin > 0) {
+//			hanshinTotal += hanshin;
+//		}
+//	}
+//	System.out.println("巨人：" + kyojinTotal + "点、阪神：" + hanshinTotal + "点");
+//	if (kyojinTotal > hanshinTotal) {
+//		System.out.println("巨人の勝ち");
+//	} else if (hanshinTotal > kyojinTotal) {
+//		System.out.println("阪神の勝ち");
+//	} 
+	
+//	自然数（正の整数）を 10 回入力し、最大値を求めるプログラムを作成しなさい。
+//	整数を 10 回入力し、最大値と最小値を求めるプログラムを作成しなさい。
+//	Scanner scn = new Scanner(System.in);
+//	int max = 0;
+//	int min = 0;
+//	for (int g = 0; g < 10; g++) {
+//		int nu = scn.nextInt();
+//		if (g == 0) {
+//			max = nu;
+//			min = nu;
+//		} else {
+//			if (nu > max)
+//				max = nu;
+//			if (nu < min)
+//				min = nu;
+//		}
+//	}
+//	System.out.println("最大値" + max + "、最小値" + min);
+	
+//	個数を示す数値を入力し、その個数分だけ‘*’を表示するプログラムを作成しなさい。
+	Scanner am = new Scanner(System.in);
+	int amount = am.nextInt();
+	for (int h = 0; h < amount; h++) {
+		System.out.print("*");
 	}
-	System.out.println("巨人：" + kyojinTotal + "点、阪神：" + hanshinTotal + "点");
-	if (kyojinTotal > hanshinTotal) {
-		System.out.println("巨人の勝ち");
-	} else if (hanshinTotal > kyojinTotal) {
-		System.out.println("阪神の勝ち");
-	} 
 	
 }
 }
