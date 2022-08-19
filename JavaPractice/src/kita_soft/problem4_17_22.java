@@ -41,14 +41,29 @@ public static void main(String[] args) {
 //	System.out.println(sum / count);
 	
 //	サイズを示す数値を入力し、何等かの文字で例のような三角形を表示するプログラムを作成しなさい。
-	Scanner s = new Scanner(System.in);
-	int size = s.nextInt();
-		for (int c = 1; c <= size; c++) {
-			for (int d = 1; d <= c; d++) {
+//	Scanner s = new Scanner(System.in);
+//	int size = s.nextInt();
+//		for (int c = 1; c <= size; c++) {
+//			for (int d = 1; d <= c; d++) {
+//				System.out.print("$");
+//			}
+//			System.out.println();
+//		}
+	
+//	サイズを示す数値を入力し、そのサイズの×印を何等かの文字で表示するプログラムを作成しなさい。
+	Scanner sc = new Scanner(System.in);
+	int sizeX = sc.nextInt();
+	for (int e = 0; e < sizeX; e++) {
+		for (int f = 0; f < sizeX; f++) {
+			if (e == f ||  (sizeX - f - 1) == e) {
 				System.out.print("$");
+			} else {
+				System.out.print(" ");
 			}
-			System.out.println();
 		}
+		System.out.println();
 	}
+	
+}
 }
 
