@@ -1,0 +1,8 @@
+package sevenDays_5;
+
+public class prob5_1 {
+public static void main(String[] args) {
+	int[] a = new int[7];
+	
+}
+}
