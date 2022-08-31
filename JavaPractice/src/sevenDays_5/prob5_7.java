@@ -18,8 +18,7 @@ public class prob5_7 {
 		System.out.print(math);
 		System.out.println();
 		
-		System.out.print("平均値：");
-		System.out.print(math / num.length);
+		System.out.print("平均値：" + (math / num.length));
 		System.out.println();
 
 //		平均値よりも大きい数を表示する
