@@ -11,15 +11,11 @@ public class prob5_7 {
 		System.out.println();
 		
 //		配列の値の合計値と、平均値を表示する。
-		System.out.print("合計値：");
 		for (int i = 0; i < num.length; i++) {
 			math += num[i];
 		}
-		System.out.print(math);
-		System.out.println();
-		
-		System.out.print("平均値：" + (math / num.length));
-		System.out.println();
+		System.out.println("合計値：" + math);		
+		System.out.println("平均値：" + (math / num.length));
 
 //		平均値よりも大きい数を表示する
 		System.out.print("平均値より大きい数：");
