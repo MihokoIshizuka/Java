@@ -22,7 +22,7 @@ public class prob5_13 {
 				min = num[i];
 			}
 		}
-		System.out.println("最大値：" + max);
-		System.out.println("最小値：" + min);
+		System.out.println("最大値:" + max);
+		System.out.println("最小値:" + min);
 	}
 }
