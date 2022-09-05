@@ -8,6 +8,7 @@ public class SampleClass01 {
 		return a + b;
 	}
 	String add(String s) {
+//		this.sはフィールドのs、何もついていないsは、この引数のs
 		return this.s + s;
 	}
 	void showNum() {
