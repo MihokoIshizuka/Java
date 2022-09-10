@@ -2,7 +2,7 @@ package sevenDays_7;
 
 public class Data {
 	public Data() {
-		System.out.println("コンストラクタ");
+		
 	}
 	//  メンバ変数number
     private int number = 0;
