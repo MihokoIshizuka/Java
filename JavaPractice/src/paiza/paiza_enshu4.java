@@ -1,4 +1,4 @@
-package sevenDays_7;
+package paiza;
 
 public class paiza_enshu4 {
 //	サイコロの目をランダムで表示させる

@@ -1,4 +1,4 @@
-package sevenDays_7;
+package paiza;
 
 public class paiza_enshu3 {
 //	10行の出力
