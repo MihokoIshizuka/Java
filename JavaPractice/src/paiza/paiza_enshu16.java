@@ -12,7 +12,7 @@ public class paiza_enshu16 {
         }
         System.out.println();
         
-//      同じ結果になる
+//      拡張for文の書き方
         for (String[] team :teams) {
             for (String player : team) {
                 System.out.print(player +  " ");
