@@ -10,6 +10,14 @@ public class paiza_enshu16 {
                 System.out.print(teams[i][j] + " ");
             }
         }
+        System.out.println();
+        
+//      同じ結果になる
+        for (String[] team :teams) {
+            for (String player : team) {
+                System.out.print(player +  " ");
+            }
+        }
 
     }
 
