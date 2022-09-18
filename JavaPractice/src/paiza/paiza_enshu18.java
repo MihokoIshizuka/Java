@@ -1,7 +1,7 @@
 package paiza;
 
 public class paiza_enshu18 {
-//	3次元配列のドット絵
+//	3次元配列のドット絵作り方
 	public static void main(String[] args) {
 
         int[][][] letters =
