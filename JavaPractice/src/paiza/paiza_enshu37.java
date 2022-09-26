@@ -11,6 +11,7 @@ public class paiza_enshu37 {
             System.out.println(answer);
         } catch (Exception e) {
             // 例外の発生状況を表示させる
+        	System.err.println("0では、割り算できません。");
             e.printStackTrace();
         } finally {
             System.out.println("Hello Java");
